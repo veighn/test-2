@@ -1,0 +1,206 @@
+
+:root {
+    --c-bg-page: #e9e9e9;
+    --c-bg-content: #ffffff;
+    --c-bg-footer: #14181d;
+    --c-text-main: #000000;
+    --c-text-light: #ffffff;
+    --c-bg-featured: #f9f9f9; 
+
+    --font-heading: "Protest Guerrilla", sans-serif;
+    --font-body: "Josefin Sans", sans-serif;
+
+    /* Default Spacing (Mobile) */
+    --spacing: 12px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    background-color: var(--c-bg-page);
+    font-family: var(--font-body);
+    color: var(--c-text-main);
+    line-height: 1.5;
+    /* Centers the whole page */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+img { max-width: 100%; display: block; height: auto; }
+
+
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    line-height: 1.1;
+    margin-bottom: var(--spacing);
+    text-transform: uppercase;
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 1.5rem; }
+
+p { margin-bottom: var(--spacing); }
+
+.site-nav a {
+    text-decoration: none;
+    color: var(--c-text-main);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.site-nav a:hover { color: #666; }
+
+
+.page-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+/* Header: Stacked & Centered */
+.site-header {
+    width: 100%;
+    margin-bottom: var(--spacing);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.header-inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing);
+}
+
+.logo { width: 80px; }
+
+.site-nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Content Box */
+.blog-post {
+    background-color: var(--c-bg-content);
+    width: 100%;
+    padding: var(--spacing);
+    text-align: left; 
+}
+
+.post-header { margin-bottom: calc(var(--spacing) * 2); }
+.content-img { margin-bottom: var(--spacing); width: 100%; }
+
+/* Featured Album (Mobile Style) */
+.featured-album {
+    background-color: var(--c-bg-featured);
+    padding: var(--spacing);
+    margin-bottom: var(--spacing);
+    border: 1px solid #ddd;
+    width: 100%; 
+}
+
+.featured-info { margin-top: 10px; text-align: center; }
+.featured-info .album-title { font-weight: bold; margin-bottom: 0; }
+.featured-info .artist-name { font-style: italic; margin-bottom: 0; }
+
+/* Album Grid (Mobile Style) */
+.album-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: var(--spacing);
+    margin: var(--spacing) 0;
+}
+
+/* Author Section */
+.author-section {
+    margin-top: calc(var(--spacing) * 2);
+    border-top: 2px solid var(--c-bg-page);
+    padding-top: var(--spacing);
+}
+
+.author-photo {
+    width: 200px;
+    height: 200px; 
+    object-fit: cover;
+    margin-bottom: var(--spacing);
+}
+
+.site-footer {
+    background-color: var(--c-bg-footer);
+    color: var(--c-text-light);
+    padding: var(--spacing);
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+}
+
+
+/* Large Mobile */
+@media (min-width: 540px) {
+    :root { --spacing: 20px; }
+}
+
+/* Tablet */
+@media (min-width: 720px) {
+    :root { --spacing: 30px; }
+
+    /* Nav becomes horizontal row */
+    .site-nav ul {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    /* Author becomes side-by-side */
+    .author-body {
+        display: flex;
+        gap: var(--spacing);
+        align-items: flex-start;
+    }
+    .author-photo { margin-bottom: 0; flex-shrink: 0; }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    :root { --spacing: 50px; }
+
+    .logo { width: 200px; }
+    h1 { font-size: 5rem; }
+    
+    .intro-paragraph {
+        font-size: 1.5rem;
+        line-height: 1.6;
+        font-weight: 300;
+    }
+
+    .site-nav ul { gap: 50px; }
+
+
+    .featured-album {
+        float: right;         
+        width: 300px;
+        height: 300px;
+        margin-left: 40px;
+        margin-bottom: 30px;
+        margin-top: 10px;      
+    }
+
+
+    .album-grid {
+        grid-template-columns: repeat(4, 1fr); 
+        gap: 20px;
+    }
+}
