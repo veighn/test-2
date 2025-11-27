@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erased Tapes - Desktop View</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Protest+Guerrilla&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assessmenttask1style.css">
+</head>
+<body>
+
+    <div class="page-background">
+        
+        <div class="page-wrapper">
+            <header class="site-header">
+                <div class="header-inner">
+                    <img src="assets/logo.png" alt="Erased Tapes" class="logo">
+                    <nav class="site-nav">
+                        <ul>
+                            <li><a href="#">Our Blog</a></li>
+                            <li><a href="#">Our Artists</a></li>
+                            <li><a href="#">Our Story</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+    
+            <main>
+                <article class="blog-post">
+                    <header class="post-header">
+                        <h1>Erased Tapes: Exploring the Sonic Frontier</h1>
+                    </header>
+    
+                    <div class="post-content">
+                        <p class="intro-paragraph">
+                            ███████████ ██████████████████ ███
+                        </p>
+    
+                        <h2>The Beginning</h2>
+                        <p>
+                            █████████████ ███████████████████████████████████████████
+                        </p>
+                        
+                      
+    
+                        <h2>The Evolution</h2>
+                        
+
+                        <aside class="featured-album">
+                            <div class="featured-img-wrapper">
+                                <img src="assets/the-cell.jpg" alt="Featured Album"> 
+                            </div>
+                            <div class="featured-info">
+                                <h3>Featured Album</h3>
+                            </div>
+                        </aside>
+
+                        <p>
+                           ███████████████████████████████████ █████████████████████
+                        </p>
+    
+                         <h3>Album releases</h3>
+
+
+                        <div class="album-grid">
+                            <img src="assets/eulogy-for-evolution.jpg" alt="Release 1">
+                            <img src="assets/blurred.jpg" alt="Release 2">
+                            <img src="assets/all-encores.jpg" alt="Release 3">
+                            <img src="assets/articulation.jpg" alt="Release 4">
+                        </div>
+                    </div>
+    
+                    <section class="author-section">
+                        <div class="author-header">
+                            <h2>The Author</h2>
+                        </div>
+                        <div class="author-body">
+                            <img src="assets/profile_picture.jpg" alt="Author Profile" class="author-photo">
+                            <div class="author-text">
+                                <p>
+                                    ██████████████████████████
+                                    ███████████████████ 
+                                    ███████████████████
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+            </main>
+    
+            <footer class="site-footer">
+                <p>Copyright © 2023 Erased Disks Ltd.</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
